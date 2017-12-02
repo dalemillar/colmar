@@ -7,7 +7,7 @@ html{
 }
 
 div{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 /*Header*/
@@ -40,7 +40,7 @@ div{
 
 nav{
   display: flex;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   flex-grow: 1;
   justify-content: flex-end;
   height: 64px;
@@ -454,4 +454,201 @@ nav ul li{
   margin: 0px 0px 24px 16px;
   font-size: 0.8rem;
   line-height: 1.6;
+}
+
+/*Mobile Third Block*/
+.mobile_learning{
+  display: none;
+}
+
+@media only screen and (max-width: 480px){
+  .learning{
+    display: none;
+  }
+
+  .mobile_learning{
+    margin: 32px 8px 24px 8px;
+    display: block;
+  }
+
+  .mobile_learning h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .mobile_learning h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    text-align: left;
+    margin: 0px 8px 8px 8px;
+    background-color: Gainsboro;
+    max-width: 100%;
+  }
+}
+
+/*Fourth Block*/
+
+.thesis{
+  display: flex;
+  margin: 32px 24px;
+  flex-direction: column;
+}
+
+.thesis h1{
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.thesis .main{
+  display: flex
+}
+
+.thesis .left{
+  display: block;
+  max-width: 60%;
+  padding-right: 24px;
+}
+
+.thesis .left .film{
+  max-width: 100%;
+}
+
+.thesis .left .film video{
+  max-width: 100%;
+  height: auto;
+}
+
+.thesis .left h2{
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.thesis .left p{
+  line-height: 1.4;
+}
+
+.thesis .right{
+  display: flex;
+  max-width: 40%;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.thesis .right .mini{
+  background-color: Gainsboro;
+  display: flex;
+  align-items: center
+}
+
+.thesis .right .mini img{
+  margin: 16px;
+  max-width: 35%;
+  max-height: auto;
+}
+
+.thesis .right .mini h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.thesis .right .mini p{
+  line-height: 1.4;
+}
+
+.thesis .right .mini-w{
+  background-color: white;
+  display: flex;
+  align-items: center
+}
+
+.thesis .right .mini-w img{
+  margin: 16px;
+  max-width: 35%;
+  max-height: 200px;
+}
+
+.thesis .right .mini-w h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.thesis .right .mini-w p{
+  line-height: 1.4;
+}
+
+/*Fourth Block Mobile*/
+.mobile-thesis{
+  display: none;
+}
+
+@media only screen and (max-width: 480px){
+  .thesis{
+    display: none;
+  }
+
+  .mobile-thesis{
+    display: block;
+  }
+
+  .mobile-thesis h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .mobile-thesis video{
+    height: auto;
+    width: 100%;
+  }
+}
+
+/*Footer*/
+
+.copyright{
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  flex: 1 1 auto;
+  margin-right: 24px;
+}
+
+.copyright p{
+
+  padding-top: 16px;
+  padding-left: 24px;
+
+}
+
+.copyright ul{
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.copyright li{
+  padding-left: 8px;
+}
+
+/*Mobile Footer*/
+
+@media only screen and (max-width: 480px){
+  .copyright ul{
+    display: none;
+  }
 }
